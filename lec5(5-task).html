@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- light blue 100 by 100 
+    mouse down = yellow , text = click
+    relese = pink , text = released -->
+    <div style="height: 100px;width: 100px;background-color: blue;" onmousedown="md(this)" onmouseup="mu(this)">
+        click me
+    </div>
+    <script>
+        function md(e){
+            e.style.backgroundColor="yellow";
+            e.innerHTML="clicked"
+        }
+        function mu(e){
+            e.style.backgroundColor="pink";
+            e.innerHTML="Released"
+        }
+    </script>
+</body>
+</html>
